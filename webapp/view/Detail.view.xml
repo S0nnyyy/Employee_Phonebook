@@ -1,0 +1,26 @@
+<mvc:View
+	controllerName="telefoni_seznam.controller.Detail"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout">
+	<Page
+		title="{i18n>detailPageTitle}"
+		showNavButton="true"
+		navButtonPress=".onNavBack">
+			<MessageStrip
+				text="ID Zaměstnance {employee>EmployeeID}"
+				type="Information"
+				showIcon="true"
+				class="sapUiMediumMarginBottom">
+			</MessageStrip>
+		<ObjectHeader
+			title="{employee>FirstName} {employee>LastName}"/>	
+			<mvc:XMLView viewName="telefoni_seznam.view.Frag"/>
+		<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Odpracovaných hodin" subheader="Od Roku {employee>Boarder}" press="press">
+			<TileContent>
+				<NumericContent value="{employee>Hours}"/>
+			</TileContent>
+		</GenericTile>
+	</Page>
+	
+</mvc:View>

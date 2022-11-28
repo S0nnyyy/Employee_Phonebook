@@ -1,0 +1,36 @@
+<mvc:View
+	controllerName="telefoni_seznam.controller.Employees"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+		<Table id="employeesTable"
+		items="{employee>/Employee}">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="{i18n>Employees}" level="H2"/>
+				<ToolbarSpacer />
+				<SearchField id="searchField" search=".onFilterEmployees" width="50%"/>
+				<Button icon="sap-icon://sort" press=".onSortButtonPressed"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="firstNameCol" demandPopin="true"><Text text="{i18n>FirstName}"/></Column>
+			<Column id="lastNameCol" demandPopin="true"><Text text="{i18n>LastName}"/></Column>
+			<Column id="addressCol" minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>Address}"/></Column>
+			<Column id="cityCol" minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>City}"/></Column>
+			<Column id="postalCodeCol" minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>PostalCode}"/></Column>
+			<Column id="departmentCol" minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>Department}"/></Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Navigation" press="onPress">
+				<cells>
+					<Text text="{employee>FirstName}"/>
+					<Text text="{employee>LastName}"/>
+					<Text text="{employee>Address}"/>
+					<Text text="{employee>City}"/>
+					<Text text="{employee>PostalCode}"/>
+					<Text text="{employee>Department}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

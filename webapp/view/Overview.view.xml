@@ -1,0 +1,19 @@
+<mvc:View
+	controllerName="telefoni_seznam.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	busyIndicatorDelay="0"
+	displayBlock="true">
+	<Shell>
+		<App class="myAppDemoWT">
+			<pages>
+				<Page title="{i18n>mainPageTitle}">
+					<content>
+						<mvc:XMLView viewName="telefoni_seznam.view.Employees"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,134 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<VBox class="sapUiSmallMargin">
+		<f:Form id="FormDisplay354"
+			editable="false">
+			<f:title>
+				<core:Title text="{i18n>Address}" />
+			</f:title>
+			<f:layout>
+				<f:ResponsiveGridLayout
+					labelSpanXL="3"
+					labelSpanL="3"
+					labelSpanM="3"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="4"
+					emptySpanL="4"
+					emptySpanM="4"
+					emptySpanS="0"
+					columnsXL="1"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false" />
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:formElements>
+						<f:FormElement label="{i18n>Address}">
+							<f:fields>
+								<Text text="{employee>Address}" />
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="{i18n>City}">
+							<f:fields>
+								<Text text="{employee>City}" />
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="{i18n>Country}">
+							<f:fields>
+								<Text text="{employee>Country}" />
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="{i18n>PostalCode}">
+							<f:fields>
+								<Text text="{employee>PostalCode}" />
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+
+        <f:Form
+			editable="false">
+			<f:title>
+				<core:Title text="{i18n>Department}" />
+			</f:title>
+			<f:layout>
+				<f:ResponsiveGridLayout
+					labelSpanXL="3"
+					labelSpanL="3"
+					labelSpanM="3"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="4"
+					emptySpanL="4"
+					emptySpanM="4"
+					emptySpanS="0"
+					columnsXL="1"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false" />
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:formElements>
+						<f:FormElement label="{i18n>Department}">
+							<f:fields>
+								<Text text="{employee>Department}" />
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="{i18n>Blok}">
+							<f:fields>
+								<Text text="{employee>Blok}" />
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+
+                <f:Form
+			editable="false">
+			<f:title>
+				<core:Title text="{i18n>Contact}" />
+			</f:title>
+			<f:layout>
+				<f:ResponsiveGridLayout
+					labelSpanXL="3"
+					labelSpanL="3"
+					labelSpanM="3"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="4"
+					emptySpanL="4"
+					emptySpanM="4"
+					emptySpanS="0"
+					columnsXL="1"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false" />
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:formElements>
+						<f:FormElement label="{i18n>Telefon}">
+							<f:fields>
+								<Text text="{employee>HomePhone}" />
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement label="Email">
+							<f:fields>
+								<Text text="{employee>LastName}.{employee>FirstName}@companyName.cz" />
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+	</VBox>
+</core:FragmentDefinition>
