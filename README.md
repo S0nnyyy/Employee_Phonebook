@@ -1,11 +1,6 @@
 # Employee_Phonebook
 A page with a simple overview of employees. Used openui5.
-
-> 1. Employees data are random generated.
-> 2. Used OPENUI5 Framework.
-  >   - Simple solution for companies.
-  >   - Compatible with SAP
-> 3. Easy to expand.
+>  Used OPENUI5 Framework.
 
 
 
@@ -19,12 +14,3 @@ A page with a simple overview of employees. Used openui5.
 
 ![Main](overview/employeepage.png)
 
-## Installation
-
-Very easy to install.
-Need to use XAMPP or other host apps.
-
-```sh
-open cmd
-git clone https://github.com/S0nnyyy/Employee_Phonebook
-```
